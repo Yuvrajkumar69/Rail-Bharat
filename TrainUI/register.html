@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Create Account | Rail Bharat</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap"
+            rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="auth.css">
+</head>
+
+<body>
+
+<header class="site-header">
+
+    <nav class="navbar container">
+
+        <a
+                class="brand"
+                href="index.html"
+        >
+            <span class="brand-icon">🚆</span>
+            <span>Rail <b>Bharat</b></span>
+        </a>
+
+        <a
+                href="index.html"
+                class="auth-back-link"
+        >
+            ← Back to Rail Bharat
+        </a>
+
+    </nav>
+
+</header>
+
+
+<main class="auth-page">
+
+    <div class="auth-container">
+
+        <section class="auth-brand-panel">
+
+            <span class="eyebrow">
+                JOIN RAIL BHARAT
+            </span>
+
+            <h1>
+                Start your
+                <span>journey today.</span>
+            </h1>
+
+            <p>
+                Create your Rail Bharat account and manage
+                railway reservations, PNR details and your
+                complete booking history from one place.
+            </p>
+
+            <div class="auth-feature-list">
+
+                <div>
+                    <span>✓</span>
+                    <p>
+                        One account for your journeys
+                    </p>
+                </div>
+
+                <div>
+                    <span>✓</span>
+                    <p>
+                        Easy access to booking history
+                    </p>
+                </div>
+
+                <div>
+                    <span>✓</span>
+                    <p>
+                        Secure password protection
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="auth-card">
+
+            <div class="auth-card-heading">
+
+                <div class="auth-icon">
+                    👤
+                </div>
+
+                <div>
+
+                    <span>
+                        CREATE ACCOUNT
+                    </span>
+
+                    <h2>
+                        Register
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <form
+                    id="registerForm"
+                    class="auth-form"
+            >
+
+                <div class="auth-field">
+
+                    <label for="registerName">
+                        Full name
+                    </label>
+
+                    <input
+                            type="text"
+                            id="registerName"
+                            name="fullName"
+                            autocomplete="name"
+                            maxlength="100"
+                            placeholder="Enter your full name"
+                            required
+                    >
+
+                </div>
+
+
+                <div class="auth-field">
+
+                    <label for="registerEmail">
+                        Email address
+                    </label>
+
+                    <input
+                            type="email"
+                            id="registerEmail"
+                            name="email"
+                            autocomplete="email"
+                            placeholder="you@example.com"
+                            required
+                    >
+
+                </div>
+
+
+                <div class="auth-field">
+
+                    <label for="registerPhone">
+                        Mobile number
+                    </label>
+
+                    <input
+                            type="tel"
+                            id="registerPhone"
+                            name="phone"
+                            autocomplete="tel"
+                            inputmode="numeric"
+                            maxlength="10"
+                            pattern="[6-9][0-9]{9}"
+                            placeholder="10-digit mobile number"
+                            required
+                    >
+
+                </div>
+
+
+                <div class="auth-field">
+
+                    <label for="registerPassword">
+                        Password
+                    </label>
+
+                    <div class="password-input-wrap">
+
+                        <input
+                                type="password"
+                                id="registerPassword"
+                                name="password"
+                                autocomplete="new-password"
+                                minlength="8"
+                                maxlength="100"
+                                placeholder="Minimum 8 characters"
+                                required
+                        >
+
+                        <button
+                                type="button"
+                                class="password-toggle"
+                                id="toggleRegisterPassword"
+                                aria-label="Show password"
+                        >
+                            👁
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <div class="auth-field">
+
+                    <label for="confirmPassword">
+                        Confirm password
+                    </label>
+
+                    <div class="password-input-wrap">
+
+                        <input
+                                type="password"
+                                id="confirmPassword"
+                                autocomplete="new-password"
+                                minlength="8"
+                                maxlength="100"
+                                placeholder="Re-enter your password"
+                                required
+                        >
+
+                        <button
+                                type="button"
+                                class="password-toggle"
+                                id="toggleConfirmPassword"
+                                aria-label="Show password"
+                        >
+                            👁
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <button
+                        type="submit"
+                        class="auth-submit-btn"
+                        id="registerButton"
+                >
+                    <span>
+                        Create Account
+                    </span>
+
+                    <span>
+                        →
+                    </span>
+                </button>
+
+
+                <div
+                        id="registerStatus"
+                        class="auth-status"
+                        role="alert"
+                ></div>
+
+            </form>
+
+
+            <div class="auth-divider">
+                <span>ALREADY HAVE AN ACCOUNT?</span>
+            </div>
+
+
+            <a
+                    href="login.html"
+                    class="auth-secondary-btn"
+            >
+                Sign in instead
+            </a>
+
+
+            <p class="auth-demo-note">
+                🔒 Your password is securely hashed before
+                being stored.
+            </p>
+
+        </section>
+
+    </div>
+
+</main>
+
+
+<footer>
+
+    <div class="container footer-inner">
+
+        <div class="brand">
+            <span class="brand-icon">🚆</span>
+            Rail <b>Bharat</b>
+        </div>
+
+        <p>
+            © 2026 Rail Bharat · Railway Reservation System
+        </p>
+
+        <a href="index.html">
+            Back to home ↑
+        </a>
+
+    </div>
+
+</footer>
+
+
+<script src="register.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Login | Rail Bharat</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap"
+            rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="auth.css">
+</head>
+
+<body>
+
+<header class="site-header">
+
+    <nav class="navbar container">
+
+        <a
+                class="brand"
+                href="index.html"
+        >
+            <span class="brand-icon">🚆</span>
+            <span>Rail <b>Bharat</b></span>
+        </a>
+
+        <a
+                href="index.html"
+                class="auth-back-link"
+        >
+            ← Back to Rail Bharat
+        </a>
+
+    </nav>
+
+</header>
+
+
+<main class="auth-page">
+
+    <div class="auth-container">
+
+        <section class="auth-brand-panel">
+
+            <span class="eyebrow">
+                RAIL BHARAT
+            </span>
+
+            <h1>
+                Your journey,
+                <span>your account.</span>
+            </h1>
+
+            <p>
+                Sign in to manage your railway reservations,
+                view your bookings and check your PNR details
+                from one place.
+            </p>
+
+            <div class="auth-feature-list">
+
+                <div>
+                    <span>✓</span>
+                    <p>
+                        Manage your bookings
+                    </p>
+                </div>
+
+                <div>
+                    <span>✓</span>
+                    <p>
+                        Access your PNR details
+                    </p>
+                </div>
+
+                <div>
+                    <span>✓</span>
+                    <p>
+                        Faster booking experience
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="auth-card">
+
+            <div class="auth-card-heading">
+
+                <div class="auth-icon">
+                    🔐
+                </div>
+
+                <div>
+                    <span>
+                        WELCOME BACK
+                    </span>
+
+                    <h2>
+                        Sign in
+                    </h2>
+                </div>
+
+            </div>
+
+
+            <form
+                    id="loginForm"
+                    class="auth-form"
+            >
+
+                <div class="auth-field">
+
+                    <label for="loginEmail">
+                        Email address
+                    </label>
+
+                    <input
+                            type="email"
+                            id="loginEmail"
+                            name="email"
+                            autocomplete="email"
+                            placeholder="you@example.com"
+                            required
+                    >
+
+                </div>
+
+
+                <div class="auth-field">
+
+                    <div class="password-label-row">
+
+                        <label for="loginPassword">
+                            Password
+                        </label>
+
+                    </div>
+
+                    <div class="password-input-wrap">
+
+                        <input
+                                type="password"
+                                id="loginPassword"
+                                name="password"
+                                autocomplete="current-password"
+                                placeholder="Enter your password"
+                                required
+                        >
+
+                        <button
+                                type="button"
+                                class="password-toggle"
+                                id="toggleLoginPassword"
+                                aria-label="Show password"
+                        >
+                            👁
+                        </button>
+
+                        <div class="forgot-password-link">
+                            <a href="forgot-password.html">
+                                Forgot Password?
+                            </a>
+                        </div>
+
+
+                <button
+                        type="submit"
+                        class="auth-submit-btn"
+                        id="loginButton"
+                >
+                    <span>
+                        Sign In
+                    </span>
+
+                    <span>
+                        →
+                    </span>
+                </button>
+
+
+                <div
+                        id="loginStatus"
+                        class="auth-status"
+                        role="alert"
+                ></div>
+
+            </form>
+
+
+            <div class="auth-divider">
+                <span>NEW TO RAIL BHARAT?</span>
+            </div>
+
+
+            <a
+                    href="register.html"
+                    class="auth-secondary-btn"
+            >
+                Create an account
+            </a>
+
+
+            <p class="auth-demo-note">
+                🔒 Your password is securely protected
+                using BCrypt encryption.
+            </p>
+
+        </section>
+
+    </div>
+
+</main>
+
+
+<footer>
+
+    <div class="container footer-inner">
+
+        <div class="brand">
+            <span class="brand-icon">🚆</span>
+            Rail <b>Bharat</b>
+        </div>
+
+        <p>
+            © 2026 Rail Bharat · Railway Reservation System
+        </p>
+
+        <a href="index.html">
+            Back to home ↑
+        </a>
+
+    </div>
+
+</footer>
+
+
+<script src="auth.js"></script>
+
+</body>
+
+</html>

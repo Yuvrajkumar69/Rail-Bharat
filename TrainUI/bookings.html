@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>My Bookings | Rail Bharat</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="bookings.css">
+</head>
+
+<body>
+
+<header class="site-header">
+
+    <div class="container navbar">
+
+        <a href="index.html" class="brand">
+            <span class="brand-icon">🚆</span>
+            Rail <b>Bharat</b>
+        </a>
+
+        <nav class="nav-links" id="navLinks">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="index.html#search">
+                Search Trains
+            </a>
+
+            <a
+                    href="bookings.html"
+                    class="active"
+            >
+                My Bookings
+            </a>
+
+            <a href="index.html#about">
+                About
+            </a>
+
+            <a href="index.html#contact">
+                Contact
+            </a>
+
+            <div
+                    class="auth-nav"
+                    id="authNav"
+            ></div>
+
+        </nav>
+
+        <button
+                class="menu-toggle"
+                id="menuToggle"
+                type="button"
+                aria-label="Open navigation"
+        >
+            ☰
+        </button>
+
+    </div>
+
+</header>
+
+
+<section class="bookings-hero">
+
+    <div class="container bookings-hero-content">
+
+        <span class="eyebrow">
+            RAIL BHARAT · RESERVATIONS
+        </span>
+
+        <h1>
+            My <span>Bookings</span>
+        </h1>
+
+        <p>
+            Manage your railway reservations, view PNR details
+            and keep track of your journey.
+        </p>
+
+    </div>
+
+</section>
+
+
+<main class="bookings-section">
+
+    <div class="container">
+
+        <div class="bookings-page-header">
+
+            <div>
+
+                <span class="section-label">
+                    YOUR RESERVATIONS
+                </span>
+
+                <h2>
+                    Booking History
+                </h2>
+
+                <p>
+                    Your recent Rail Bharat reservations
+                    in one place.
+                </p>
+
+            </div>
+
+            <button
+                    type="button"
+                    class="refresh-bookings-btn"
+                    id="refreshBookings"
+            >
+                <span>↻</span>
+                Refresh
+            </button>
+
+        </div>
+
+
+        <section
+                class="booking-summary-grid"
+                aria-label="Booking summary"
+        >
+
+            <div class="booking-summary-card">
+
+                <div class="summary-icon">
+                    📋
+                </div>
+
+                <div>
+
+                    <span>
+                        Total Bookings
+                    </span>
+
+                    <strong id="totalBookings">
+                        0
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="booking-summary-card confirmed">
+
+                <div class="summary-icon">
+                    ✓
+                </div>
+
+                <div>
+
+                    <span>
+                        Confirmed
+                    </span>
+
+                    <strong id="confirmedBookings">
+                        0
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="booking-summary-card cancelled">
+
+                <div class="summary-icon">
+                    ×
+                </div>
+
+                <div>
+
+                    <span>
+                        Cancelled
+                    </span>
+
+                    <strong id="cancelledBookings">
+                        0
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="booking-summary-card passengers">
+
+                <div class="summary-icon">
+                    👥
+                </div>
+
+                <div>
+
+                    <span>
+                        Passengers
+                    </span>
+
+                    <strong id="totalPassengers">
+                        0
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <div
+                id="bookingsStatus"
+                class="bookings-status"
+                role="status"
+        ></div>
+
+
+        <div
+                id="bookingsLoading"
+                class="bookings-loading"
+        >
+
+            <div class="spinner"></div>
+
+            <span>
+                Loading your bookings...
+            </span>
+
+        </div>
+
+
+        <section
+                id="bookingsContainer"
+                class="bookings-container"
+                aria-label="Booking history"
+        ></section>
+
+
+        <section
+                id="emptyBookings"
+                class="empty-bookings"
+                style="display:none;"
+        >
+
+            <div class="empty-bookings-icon">
+                🚆
+            </div>
+
+            <h3>
+                No bookings yet
+            </h3>
+
+            <p>
+                Your railway reservations will appear here
+                once you make your first booking.
+            </p>
+
+            <a
+                    href="index.html#search"
+                    class="primary-btn"
+            >
+                Search Trains →
+            </a>
+
+        </section>
+
+    </div>
+
+</main>
+
+
+<footer>
+
+    <div class="container footer-inner">
+
+        <div>
+
+            <a
+                    href="index.html"
+                    class="brand"
+            >
+                🚆 Rail <b>Bharat</b>
+            </a>
+
+            <p>
+                Smart railway reservation made simple.
+            </p>
+
+        </div>
+
+        <div>
+
+            <span>
+                © 2026 Rail Bharat
+            </span>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<script src="bookings.js"></script>
+
+</body>
+
+</html>
